@@ -38,7 +38,7 @@ async def gps_read():
         gps_x.read_signal()
         str14 = "SA{}".format(gps_data['satellites'])
         print(str14)
-        await asyncio.sleep(1.0)
+        await asyncio.sleep(10.0)
 
 async def bus_cmd():
     while True:
